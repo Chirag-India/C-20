@@ -1,20 +1,37 @@
-var fixedRect,movingRect;
- function setup() { createCanvas(800,400);
-   movingRect= createSprite(400, 200, 50, 50); 
-   fixedRect= createSprite(200,200,60,20);
-    movingRect.shapeColor="green";
-     fixedRect.shapeColor="green" }
-      function draw() {
-         background("black");
-       movingRect.x=mouseX; movingRect.y=mouseY; 
-if(fixedRect.x-movingRect.x<fixedRect.width/2+movingRect.width/2 
-  && movingRect.x-fixedRect.x<fixedRect.width/2+movingRect.width/2
-  &&fixedRect.y-movingRect.y<fixedRect.height/2+movingRect.height/2
-  &&movingRect.y-fixedRect.y<fixedRect.height/2+movingRect.height/2)
-  { movingRect.shapeColor="red"; fixedRect.shapeColor="red" }
-   else{ movingRect.shapeColor="green"; fixedRect.shapeColor="green" } drawSprites(); }
+
+var r = 0;
+var g = 50;
+var b=255;
+
+// INITIALIZE ALL YOUR VARIABLES
+// Ideally you would create 3 variables. red blue green or r, g, b
 
 
+function setup(){
 
+  createCanvas(1200,400);
+  r = createSprite(600,400,50,50);
+  g = createSprite(400,200,10,30);
+  b = createSprite(200,400,40,20);
+  r.shapeColor = "red";
+  g.shapeColor = "green";
+  b.shapeColor = "blue";
+}
+function draw(){
+background("black");
+  // change the value of Red based on the mouse movement about the X axis
+  
+  
+  if () {
+    
+  }
+  // change the value of Green based on the mouse movement about the X axis
+  // change the value of Blue based on the mouse movement about the X axis
 
+  // Use the map() function to do so. 
 
+  // Pass the values to the background() function you have learnt previously.
+
+  // Create an ellipse that will move around with you mouse about the X axis.
+  // Remember to fill the canvas with white paint before creating the ellipse.
+}
